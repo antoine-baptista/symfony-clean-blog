@@ -1,0 +1,32 @@
+{% extends 'clean.html.twig' %}
+
+{% block title %}Reset your password{% endblock %}
+
+{% block titleheader %}Qui êtes-vous ?{% endblock %}
+
+{% block subtitleheader %}Pour les petits nouveaux, quels que soient vos métiers 👨‍🌾 !!{% endblock %}
+
+{% block body %}
+
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>Petit texte si on veut ...</p>
+                        <div class="my-5">
+
+                            <h1>Reset your password</h1>
+
+                            {{ form_start(resetForm) }}
+                                {{ form_row(resetForm.plainPassword) }}
+                                <button class="btn btn-primary">Reset password</button>
+                            {{ form_end(resetForm) }}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+{% endblock %}
